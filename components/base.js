@@ -11,7 +11,7 @@ const cookies = new Cookies();
 
 const Base = ({ children, title }) => {
     const router = useRouter();
-    const [isLoading, setLoaded] = useState(false);
+    const [loaded, setLoaded] = useState(false);
     const [isAdmin, setAdmin] = useState(false);
 
     const query = `
@@ -26,7 +26,7 @@ const Base = ({ children, title }) => {
 
 
     useEffect(() => {
-        if(!isLoading){
+        if(!loaded){
             const token = cookies.get('token');
             if(token){
                 const variables = { token };
@@ -41,8 +41,8 @@ const Base = ({ children, title }) => {
                     }
                 });
                 fetchAdminStatus().then(r => {
-                    setLoaded(true);
                     setAdmin(r.data.isAdmin);
+                    setLoaded(true);
                 })
             }else {
                 router.push('/login');
@@ -50,7 +50,7 @@ const Base = ({ children, title }) => {
         }
     });
 
-    return isLoading ? (
+    return loaded ? (
         <React.Fragment>
             <Header title={title}/>
             <Sidebar isAdmin={isAdmin} selected={router.pathname}>
