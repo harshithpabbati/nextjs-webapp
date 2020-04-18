@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageHeader } from 'antd';
 
-import BreadcrumbGenerator from './breadcrumgenerator';
+import BreadcrumbGenerator from './breadCrumbGenerator';
 
 const TitleBar = ({
   routes,

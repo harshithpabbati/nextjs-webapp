@@ -18,16 +18,12 @@
         "title": "Live Attendance"
       },
       {
-        "key": "individual-report",
-        "title": "Individual Report"
-      },
-      {
         "key": "daily-report",
         "title": "Daily Report"
       },
       {
-        "key": "attendance-stats",
-        "title": "Attendance Stats"
+        "key": "stats",
+        "title": "Stats"
       }
     ]
   },
@@ -36,10 +32,6 @@
     "key": "status-updates",
     "icon": "schedule",
     "items": [
-      {
-        "key": "dashboard",
-        "title": "Dashboard"
-      },
       {
         "key": "individual-report",
         "title": "Individual Report"
@@ -53,8 +45,8 @@
         "title": "Messages"
       },
       {
-        "key": "status-stats",
-        "title": "Status Update Stats"
+        "key": "stats",
+        "title": "Stats"
       }
     ]
   },
@@ -75,7 +67,7 @@
   },
   {
     "title": "Forms",
-    "key": "form",
+    "key": "forms",
     "icon": "form",
     "items": [
       {

@@ -9,6 +9,8 @@ const Header = (props) => (
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content={props.description} />
         <meta name="keywords" content={props.keywords} />
+        <link rel="shortcut icon" href="/public/static/favicon.png" />
+        <link rel="manifest" href="/public/static/manifest.json" />
     </Head>
 );
 

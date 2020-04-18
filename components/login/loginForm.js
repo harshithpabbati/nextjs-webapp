@@ -6,7 +6,7 @@ import { UserOutlined, LockOutlined } from '@ant-design/icons';
 
 import dataFetch from '../../utils/dataFetch';
 import { TokenAuth as query } from '../../utils/mutations';
-import cmsLogo from "../../static/images/cms_logo.png";
+import cmsLogo from "../../public/static/images/cms_logo.png";
 
 const cookies = new Cookies();
 

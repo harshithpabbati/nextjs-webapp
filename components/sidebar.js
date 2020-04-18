@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {Menu, Layout, Drawer} from 'antd';
-import cmsLogo from '../static/images/cms_logo.png';
+import cmsLogo from '../public/static/images/cms_logo.png';
 import { MenuOutlined } from "@ant-design/icons";
 
 import list from './links';

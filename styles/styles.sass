@@ -1,7 +1,17 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
 
+body
+  margin: 0
+
+h4
+  line-height: 1
+
 .page-container
   min-height: 100vh
+
+.top-bar
+  height: 7vh
+  padding: 0.5rem 1rem
 
 .title-bar
   background: white
@@ -9,8 +19,83 @@
   margin-bottom: 5vh
   border-bottom: 0.5px solid rgba(0,0,0,0.5)
 
+.featured-task
+  margin-bottom: 1rem
+
+.task-card
+  border-radius: 0!important
+  h2
+    font-weight: 400
+    margin: 0.5rem 0
+
+  button
+    background: #FFC940!important
+    -webkit-box-shadow: 2px 2px 2px #D99E0B!important
+    box-shadow: 2px 2px 2px #D99E0B!important
+    padding: 1rem 2rem!important
+
+.task-card:hover
+  background: #FAFAFA
 a:hover
   text-decoration: none
+
+.task-info
+  margin-bottom: 0.8rem
+  .difficulty_1
+    color: #1D7324
+  .difficulty_2
+    color: #008075
+  .difficulty_3
+    color: #5C255C
+  .difficulty_4
+    color: #B83211
+.stream-card:hover
+  background: #FAFAFA
+
+.lineChart
+  height: 500px
+  width: 500px
+  background-color: #f7fcfa
+
+.leaverecord
+  h1
+    font-size: calc(6rem + 2vw)
+
+.square
+  border: 3px solid green
+  padding: 1vh
+
+.light-grey
+  color: #000!important
+  background-color: #f1f1f1!important
+  font-size: 18px!important
+
+.green-bar
+  color: #fff!important
+  background-color: #4CAF50!important
+
+.profile-img
+  width: 15vmax!important
+  height: 15vmax!important
+  position: relative
+  min-width: 200px
+  min-height: 200px
+  object-fit: cover
+  border-radius: 50%
+  margin-top: 30vh
+  border: 0.4rem solid white
+  box-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.3)
+
+
+.profile-text
+  margin-top: 49vh
+
+.image-cover
+  margin-top: -20px
+  margin-left: -25px
+  position: absolute
+  height: 45%
+
 
 select
   background: white
@@ -51,6 +136,10 @@ select
 
 .ant-table-tbody
   overflow: hidden
+
+.ant-table-body
+  min-height: 65vh!important
+  cursor: pointer
 
 .loading
   background-color: #eeeeee
